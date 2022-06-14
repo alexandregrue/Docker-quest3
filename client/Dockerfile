@@ -1,7 +1,7 @@
 FROM node:lts-alpine
 
-RUN mkdir /client
-WORKDIR /client
+RUN mkdir /app
+WORKDIR /app
 COPY package*.json ./
 RUN npm i
 COPY public public
